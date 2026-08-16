@@ -8,6 +8,23 @@ form {
   margin-top: 15px;
 }
 
+.js-apply-to-all-container {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  padding-left: 1.6rem;
+}
+
+/* Beats the UA stylesheet's [hidden] rule, which display:flex would override. */
+.js-apply-to-all-container[hidden] {
+  display: none;
+}
+
+.js-apply-to-all-container .custom-control-label {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
 .home-icon {
   height: 40px;
   width: auto;
@@ -141,6 +158,10 @@ img.normal {
   .set-name {
     position: absolute;
     top: 0;
+    left: 4px;
+    right: 4px;
+    white-space: normal;
+    line-height: 1.2;
   }
 
   .image-counter {
